@@ -1,0 +1,12 @@
+on:
+  push:
+    branches:
+      - 'release/v5.2.0'
+  
+jobs:
+ test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: okimaureen/zola-deploy-action@master
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

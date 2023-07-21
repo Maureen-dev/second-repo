@@ -1,7 +1,5 @@
 on:
   push:
-    branches:
-      - 'release/v5.2.0'
   
 jobs:
  test:
